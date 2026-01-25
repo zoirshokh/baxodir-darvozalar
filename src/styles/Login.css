@@ -1,0 +1,131 @@
+/* ================= ROOT ================= */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --bg: #f1f5f9;
+  --card-bg: rgba(255, 255, 255, 0.88);
+  --text-dark: #0f172a;
+  --text-gray: #64748b;
+  --border: #e5e7eb;
+  --error: #ef4444;
+}
+
+/* ================= OPTIONS ================= */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.forgot-password {
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* ================= DIVIDER ================= */
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  inset: 50% 0 0 0;
+  height: 1px;
+  background: var(--border);
+}
+
+.divider span {
+  background: var(--card-bg);
+  padding: 0 12px;
+  position: relative;
+  font-size: 13px;
+  color: var(--text-gray);
+}
+
+/* ================= SOCIAL LOGIN ================= */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
+}
+
+/* Google */
+.social-button.google {
+  border-color: #ea4335;
+}
+
+.social-button.google:hover {
+  background: #ea4335;
+  color: #fff;
+}
+
+/* Facebook */
+.social-button.facebook {
+  border-color: #1877f2;
+}
+
+.social-button.facebook:hover {
+  background: #1877f2;
+  color: #fff;
+}
+
+/* Icon */
+.social-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* ================= CHECKBOX ================= */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox-container input {
+  accent-color: var(--primary);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 480px) {
+  .form-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
