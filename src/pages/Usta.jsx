@@ -90,7 +90,7 @@ function Usta() {
       </div>
 
       <div className="contact-info">
-        <p>Buyurtma va savollar uchun bog‘laning</p>
+        <p>Buyurtma va savollar uchun bog'lanish uchun </p>
       </div>
     </div>
   );
