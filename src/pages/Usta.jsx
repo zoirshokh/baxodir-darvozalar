@@ -3,7 +3,7 @@ import baxodir from "../assets/baxodir.jpg";
 import "../styles/Usta.css";
 
 function Usta() {
-  const phoneNumber = "9530011";
+  const phoneNumber = "+998953001111";
 
   const socialLinks = [
     {
