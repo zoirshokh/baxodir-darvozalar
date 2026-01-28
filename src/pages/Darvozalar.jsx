@@ -48,8 +48,9 @@ function Darvozalar() {
 
   // ===== TELEGRAM DEMO =====
 const handleTelegramShare = () => {
-  window.open('https://t.me/x_raximov_o', '_blank');
+  window.open('https://t.me/baxodirdarvozachi', '_blank');
 };
+
 
   const closeModal = () => {
     setSelectedImage(null);
